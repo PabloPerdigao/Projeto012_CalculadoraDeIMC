@@ -182,6 +182,36 @@
           transform: scale(1.1);
         }
 
+      /* aler error */
+      .alert-error.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .alert-error {
+        position: absolute;
+        text-align: center;
+        padding: .8rem 0;
+
+        background-color: var(--bg-error);
+        color: var(--tt-error);
+
+        top: 0;
+        left: 0;
+        right: 0;
+
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 2rem;  
+
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: transform .5s;
+
+        
+      }
+
 
 
 
