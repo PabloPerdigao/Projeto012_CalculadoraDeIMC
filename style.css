@@ -9,44 +9,165 @@
   :root {
     font-size: 62.5%;
     /* cores */
-      --tt-heading:#040924;
+      --bg-body:#040924;
+      --tt-heading:#0C3440;
 
       --tt-label: #00453A;
       --tt-input: #212529;
       --ot-input: #02799D;
       --bd-input: rgba(73, 80, 87, 0.3);
       --tt-placeholder: rgba(73, 80, 87, 0.5);
+      --bg-input: #DCE2E9;
 
-      --tt-button: white;
+      --tt-button: #fff;
       --bg-button: #02799D;
+      --bg-button-hover:#195061;
 
       --bg-error: #F03E3E;
-      --tt-error: white;
+      --tt-error: #fff;
   }
 
 /* Configuração do body */
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--tt-heading);
+    background-color: var(--bg-body);
+    font-size: 1.6rem; 
+  }
+
+  body,input, button {
     font-size: 1.6rem;
+    line-height: 2rem;
   }
 
-  .container {
-    height: 100vh;
-    display: grid;
-    place-content: center;
+  /* configuração do form */
+    .container {
+      height: 100vh;
+      display: grid;
+      place-content: center;
+    }
+
+    /* Configuração do card */
+      .card {
+        padding: 4.8rem 6.4rem 6.4rem;
+        background: white;
+        max-width: 42.8rem;
+        margin-inline: auto;
+        
+        box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+        border-radius: .6rem;
+      }
+      
+      /* Configuração do h1*/
+        .title {
+          font-size: 3.2rem;
+          font-weight: bold;
+          line-height: 4rem;
+          color: var(--tt-heading);    
+        }
+
+        form {
+          width: 30rem;
+        }
+        
+        form h1 {
+          margin-bottom: 3.2rem;
+        }
+
+        form input {
+          width: 100%;
+        }
+
+      /* Configurações dos subtítulos */
+        .input-wrapper label {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.8rem;
+          color: var(--tt-label);
+        }
+
+      /* Configurações dos inputs */
+        .input-wrapper input {
+          
+          margin-top: .8rem;
+          padding: 1.6rem;
+
+          background-color: var(--bg-input);
+          border: 1px solid var(--bd-input);
+          border-radius: .4rem;
+        }
+
+        /* aplicar espaçamento entre os inputs
+          ( o mesmo é aplicado de trás para frente) 
+        */
+          .input-wrapper + .input-wrapper {
+            margin-top: 1.6rem;
+          }
+
+        form input:focus {
+          outline: 2px solid var(--ot-input);
+        }
+
+        form inpu::placeholder {
+          color: var(--tt-placeholder);
+        }
+        
+        /* Configurações dos inputs */
+        button {
+          margin-top: 3.2rem;
+          padding: 1.6rem;
+          width: 100%;
+          gap: .8rem;
+
+          background-color: var(--bg-button);
+          color: var(--tt-button);
+          
+          
+          font-weight: bold;
+          
+          
+          border: none;
+          border-radius: .4rem;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          cursor: pointer;
+
+          transition: background .3s;
+        }
+
+        button:hover {
+          background: var(--bg-button-hover);
+        }
+
+/* MEDIA QUERIES */
+
+  @media (min-width: 375px) {
+    .container {
+      padding: 2.4rem;
+    }
+
+    .card {
+      padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    }
+
+    .input-wrapper input {
+      padding: .8rem;
+    }
+
+    form h1 {
+      margin-bottom: 2.4rem;
+    }
+
+    .title {
+      font-size: 2.8rem;  
+    }
+
+    button {
+      margin-top: 2.8rem;
+    }
+  
   }
-
-/* Configuração do card */
-  .card {
-    padding: 4.8rem 6.4rem 6.4rem;
-    background: white;
-    max-width: 42.8rem;
-    margin-inline: auto;
-    
-
-
-    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
-    border-radius: .6rem;
-  }
+        
 
