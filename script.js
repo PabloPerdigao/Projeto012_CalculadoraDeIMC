@@ -8,25 +8,6 @@
   const modalMessage = document.querySelector('.modal .title span')
   const modalBtnClose = document.querySelector('.modal button.close')
 
-  
-  
-  /* 3 maneiras de criar e atribuir função a um evento */
-  
-  /*1ª forma:
-   form.onsubmit = function() {}
-  */
- 
-  /* 2ª forma:arrow function
-    form.onsubmit = () => {}
-  */
-  
-  /* 3ª forma:
-    form.onsubmit = handlesubmit
-    function handleSubmit() {
-      
-    }
-  */
- 
  form.onsubmit = event => {
   event.preventDefault()
    
