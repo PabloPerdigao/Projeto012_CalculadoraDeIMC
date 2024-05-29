@@ -3,7 +3,7 @@
 <br/>
 
 <p align="center">
-  <img alt="preview da calculadora de IMC" src="./assests/imcCalculator.svg" width="200px" />
+  <img alt="limite de crédito Flaticons Flat Ícone" loading="lazy" width="256" height="256" decoding="async" data-nimg="1" class="_e0usu53" style="color:transparent" src="https://cdn-icons-png.freepik.com/512/6007/6007783.png?uid=R120451706&amp;ga=GA1.1.1564247948.1708977207">
 </p>
 
 <p align="center">
