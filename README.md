@@ -46,10 +46,10 @@ Este projeto foi desenvolvido com as seguintes linguagens, tecnologias e ferrame
 
 ## 💻 Projeto
 
- 💻📊 Este projeto é uma calculadora de Índice de Massa Corporal (IMC) desenvolvida com HTML, CSS e JavaScript. 
-  A aplicação permite que os usuários insiram seu peso e altura para calcular e exibir seu IMC em um modal.
+ 📊 Este projeto é uma calculadora de Índice de Massa Corporal (IMC) desenvolvida com HTML, CSS e JavaScript. 
+ A aplicação permite que os usuários insiram seu peso e altura para calcular e exibir seu IMC em um modal.
 
-## Funcionalidades
+### ⚙️ Funcionalidades
 
 - **Entrada de Dados:** Formulário para o usuário inserir seu peso e altura.
 - **Cálculo do IMC:** Cálculo do IMC baseado nos valores fornecidos.
