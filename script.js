@@ -4,9 +4,23 @@
   const inputWeight = document.querySelector('#weight')
   const inputHeight = document.querySelector('#height')
 
-  const modalWrapper = document.querySelector('.modal-wrapper')
-  const modalMessage = document.querySelector('.modal .title span')
-  const modalBtnClose = document.querySelector('.modal button.close')
+// object literal
+  const Modal = {
+
+    wrapper: document.querySelector('.modal-wrapper'),
+    message: document.querySelector('.modal .title span'),
+    buttonClose: document.querySelector('.modal button.close'),
+
+  // shorthand funtion  
+    open() {
+      Modal.wrapper.classList.add('open')
+    },
+    close() {
+      Modal.wrapper.classList.remove('open')
+    }
+  }
+
+  Modal.close()
 
  form.onsubmit = event => {
   event.preventDefault()
@@ -18,15 +32,14 @@
    const message = `Seu IMC é de ${result}`
    
    // abrir o modal
-     modalMessage.innerText = message
-
-   // add "open" para trocar a mensagem do modal
-      modalWrapper.classList.add('open')
-}
-
-// remove "open" para trocar a mensagem do modal
-  modalBtnClose.onclick = () => 
-    modalWrapper.classList.remove('open')
+     Modal.message.innerText = message
+     Modal.open()
+    }
+    
+    // fechar o modal
+      Modal.buttonClose.onclick = () => 
+  
+      Modal.close()
 
 // função do IMC
   function IMC(weight, height) {
