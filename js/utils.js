@@ -5,6 +5,6 @@
   }
 
 // função do IMC
-  function IMC(weight, height) {
+  function calculateIMC(weight, height) {
     return (weight / ((height / 100) ** 2)).toFixed(2)
   }
