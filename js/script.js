@@ -1,6 +1,7 @@
 // import modal.js
   import { Modal } from './modal.js'
   import { AlertError } from "./alert-error.js"
+  import { IMC, notANumber } from "./utils.js"
 
 // variáveis - variables
 
@@ -33,13 +34,3 @@
       Modal.open()
   }
     
-
-  // função validação NaN
-    function notANumber(value) {
-      return isNaN(value) || value == ""
-    }
-
-  // função do IMC
-    function IMC(weight, height) {
-      return (weight / ((height / 100) ** 2)).toFixed(2)
-    }
