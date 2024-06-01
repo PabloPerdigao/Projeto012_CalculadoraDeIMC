@@ -10,8 +10,8 @@
   const inputHeight = document.querySelector('#height')
 
 //Fechar a janela de erro ao digitar no campo
-    inputWeight.oninput =() => AlertError.close
-    inputHeight.oninput =() => AlertError.close
+    inputWeight.oninput =() => AlertError.close()
+    inputHeight.oninput =() => AlertError.close()
 
  form.onsubmit = event => {
     event.preventDefault()
